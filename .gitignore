@@ -1,0 +1,6 @@
+*/.DS_Store
+core.iml
+.idea/*
+/.idea/
+
+config/testdata/module_test_partial.json
