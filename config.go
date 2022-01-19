@@ -24,7 +24,7 @@ type Config struct {
 
 	Logger kgo.Logger `json:"-" yaml:"-"`
 
-	SeedBrokers []string           `json:"seed_brokers" yaml:"seed_brokers"`
+	SeedBrokers []string           `json:"seed_brokers" yaml:"seed_brokers" mapstructure:"seed_brokers"`
 	MaxVersions *kversion.Versions `json:"-" yaml:"-"`
 	MinVersions *kversion.Versions `json:"-" yaml:"-"`
 
