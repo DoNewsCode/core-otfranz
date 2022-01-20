@@ -3,9 +3,9 @@ module github.com/DoNewsCode/core-otfranz
 go 1.17
 
 require (
-	github.com/DoNewsCode/core v0.11.1
+	github.com/DoNewsCode/core v0.12.0
 	github.com/go-kit/log v0.2.0
-	github.com/knadh/koanf v0.15.0
+	github.com/knadh/koanf v1.4.0
 	github.com/oklog/run v1.1.0
 	github.com/opentracing/opentracing-go v1.2.0
 	github.com/stretchr/testify v1.7.0
@@ -22,7 +22,9 @@ require (
 	github.com/gorilla/mux v1.8.0 // indirect
 	github.com/inconshreveable/mousetrap v1.0.0 // indirect
 	github.com/klauspost/compress v1.13.6 // indirect
+	github.com/mitchellh/copystructure v1.2.0 // indirect
 	github.com/mitchellh/mapstructure v1.4.2 // indirect
+	github.com/mitchellh/reflectwalk v1.0.2 // indirect
 	github.com/pierrec/lz4/v4 v4.1.11 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
