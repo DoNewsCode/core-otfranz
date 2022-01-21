@@ -108,6 +108,9 @@ type Config struct {
 	AutocommitMarks    bool                                                                            `json:"autocommit_marks" yaml:"autocommit_marks"`
 	AutocommitInterval time.Duration                                                                   `json:"autocommit_interval" yaml:"autocommit_interval"`
 	CommitCallback     func(*kgo.Client, *kmsg.OffsetCommitRequest, *kmsg.OffsetCommitResponse, error) `json:"-" yaml:"-"`
+
+	// Options allows users to directly use the latest options without waiting for otfranz adaptation.
+	Options []kgo.Opt `json:"-" yaml:"-"`
 }
 
 func fromConfig(conf Config) (opts []kgo.Opt) {
@@ -335,5 +338,7 @@ func fromConfig(conf Config) (opts []kgo.Opt) {
 	if conf.CommitCallback != nil {
 		opts = append(opts, kgo.AutoCommitCallback(conf.CommitCallback))
 	}
+
+	opts = append(opts, conf.Options...)
 	return
 }

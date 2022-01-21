@@ -23,10 +23,10 @@ func TestClient_ProduceWithTracing(t *testing.T) {
 	addrs := strings.Split(os.Getenv("KAFKA_ADDR"), ",")
 	factory, cleanup := provideFactory(factoryIn{
 		Logger: log.NewNopLogger(),
-		Conf: config.MapAdapter{"kafka": map[string]Config{
-			"default": {
-				SeedBrokers:         addrs,
-				DefaultProduceTopic: "tracing",
+		Conf: config.MapAdapter{"kafka": map[string]interface{}{
+			"default": map[string]interface{}{
+				"seed_brokers":          addrs,
+				"default_produce_topic": "tracing",
 			},
 		}},
 	}, func(name string, config *Config) {})
@@ -64,10 +64,10 @@ func TestClient_ProduceWithOutTracing(t *testing.T) {
 	addrs := strings.Split(os.Getenv("KAFKA_ADDR"), ",")
 	factory, cleanup := provideFactory(factoryIn{
 		Logger: log.NewNopLogger(),
-		Conf: config.MapAdapter{"kafka": map[string]Config{
-			"default": {
-				SeedBrokers:         addrs,
-				DefaultProduceTopic: "tracing",
+		Conf: config.MapAdapter{"kafka": map[string]interface{}{
+			"default": map[string]interface{}{
+				"seed_brokers":          addrs,
+				"default_produce_topic": "tracing",
 			},
 		}},
 	}, func(name string, config *Config) {})

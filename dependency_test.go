@@ -28,14 +28,14 @@ func TestProvideFactory(t *testing.T) {
 	addrs := strings.Split(os.Getenv("KAFKA_ADDR"), ",")
 	factory, cleanup := provideFactory(factoryIn{
 		Conf: config.MapAdapter{
-			"kafka": map[string]Config{
-				"default": {
-					SeedBrokers: addrs,
-					Topics:      []string{"test"},
+			"kafka": map[string]interface{}{
+				"default": map[string]interface{}{
+					"seed_brokers": addrs,
+					"topics":       []string{"test"},
 				},
-				"alternative": {
-					SeedBrokers: addrs,
-					Topics:      []string{"test"},
+				"alternative": map[string]interface{}{
+					"seed_brokers": addrs,
+					"topics":       []string{"test"},
 				},
 			},
 		},
@@ -64,14 +64,14 @@ func TestProvideKafka(t *testing.T) {
 				reloadable: c.reloadable,
 			})(factoryIn{
 				Logger: log.NewNopLogger(),
-				Conf: config.MapAdapter{"kafka": map[string]Config{
-					"default": {
-						SeedBrokers: nil,
-						Topics:      []string{"test"},
+				Conf: config.MapAdapter{"kafka": map[string]interface{}{
+					"default": map[string]interface{}{
+						"seed_brokers": nil,
+						"topics":       []string{"test"},
 					},
-					"alternative": {
-						SeedBrokers: nil,
-						Topics:      []string{"test"},
+					"alternative": map[string]interface{}{
+						"seed_brokers": nil,
+						"topics":       []string{"test"},
 					},
 				}},
 				Dispatcher: dispatcher,
@@ -97,12 +97,12 @@ func TestProduceAndConsume(t *testing.T) {
 	addrs := strings.Split(os.Getenv("KAFKA_ADDR"), ",")
 	factory, cleanup := provideFactory(factoryIn{
 		Logger: log.NewNopLogger(),
-		Conf: config.MapAdapter{"kafka": map[string]Config{
-			"default": {
-				SeedBrokers:         addrs,
-				DefaultProduceTopic: "test",
-				Topics:              []string{"test"},
-				Group:               "test",
+		Conf: config.MapAdapter{"kafka": map[string]interface{}{
+			"default": map[string]interface{}{
+				"seed_brokers":          addrs,
+				"default_produce_topic": "test",
+				"topics":                []string{"test"},
+				"group":                 "test",
 			},
 		}},
 	}, func(name string, config *Config) {})

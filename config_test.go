@@ -74,9 +74,9 @@ func Test_fromConfig(t *testing.T) {
 
 func Test_Config_Unmarshal(t *testing.T) {
 	conf := Config{}
-	kf := config.MapAdapter{"kafka": map[string]Config{
-		"default": {
-			SeedBrokers: []string{"foo"},
+	kf := config.MapAdapter{"kafka": map[string]interface{}{
+		"default": map[string]interface{}{
+			"seed_brokers": []string{"foo"},
 		},
 	}}
 
