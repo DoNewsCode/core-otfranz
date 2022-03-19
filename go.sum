@@ -806,6 +806,8 @@ github.com/twmb/franz-go v1.3.1/go.mod h1:P+i2DnBaec1o0z9EI8CyAM/WAjG99CHI3oCAhZ
 github.com/twmb/franz-go/pkg/kmsg v0.0.0-20211127185622-3b34db0c6d1e/go.mod h1:SxG/xJKhgPu25SamAq0rrucfp7lbzCpEXOC+vH/ELrY=
 github.com/twmb/franz-go/pkg/kmsg v0.0.0-20220114004744-91b30863ac2f h1:rT03/GKTF6qSPYlcBnPim/9Cp5/uXTRCwzvp7Q9Uofk=
 github.com/twmb/franz-go/pkg/kmsg v0.0.0-20220114004744-91b30863ac2f/go.mod h1:SxG/xJKhgPu25SamAq0rrucfp7lbzCpEXOC+vH/ELrY=
+github.com/twmb/franz-go/pkg/kmsg v0.0.0-20220319065723-845bc50e6da0 h1:4hGEMcudz3fCkPUCPVG/YrzbA79YCxtMsGKjTsGb+i8=
+github.com/twmb/franz-go/pkg/kmsg v0.0.0-20220319065723-845bc50e6da0/go.mod h1:SxG/xJKhgPu25SamAq0rrucfp7lbzCpEXOC+vH/ELrY=
 github.com/twmb/go-rbtree v1.0.0 h1:KxN7dXJ8XaZ4cvmHV1qqXTshxX3EBvX/toG5+UR49Mg=
 github.com/twmb/go-rbtree v1.0.0/go.mod h1:UlIAI8gu3KRPkXSobZnmJfVwCJgEhD/liWzT5ppzIyc=
 github.com/uber/jaeger-client-go v2.25.0+incompatible h1:IxcNZ7WRY1Y3G4poYlx24szfsn/3LvK9QHCq9oQw8+U=
