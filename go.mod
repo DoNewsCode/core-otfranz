@@ -5,7 +5,7 @@ go 1.17
 require (
 	github.com/DoNewsCode/core v0.12.0
 	github.com/go-kit/log v0.2.0
-	github.com/knadh/koanf v1.4.0
+	github.com/knadh/koanf v1.4.2
 	github.com/oklog/run v1.1.0
 	github.com/opentracing/opentracing-go v1.2.0
 	github.com/stretchr/testify v1.7.0
@@ -41,5 +41,5 @@ require (
 	google.golang.org/grpc v1.43.0 // indirect
 	google.golang.org/protobuf v1.27.1 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
-	gopkg.in/yaml.v3 v3.0.0-20210107192922-496545a6307b // indirect
+	gopkg.in/yaml.v3 v3.0.0 // indirect
 )
