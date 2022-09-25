@@ -10,7 +10,7 @@ require (
 	github.com/opentracing/opentracing-go v1.2.0
 	github.com/stretchr/testify v1.7.0
 	github.com/twmb/franz-go v1.3.1
-	github.com/twmb/franz-go/pkg/kmsg v0.0.0-20220114004744-91b30863ac2f
+	github.com/twmb/franz-go/pkg/kmsg v1.2.0
 )
 
 require (
