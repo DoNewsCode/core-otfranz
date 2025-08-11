@@ -4,7 +4,7 @@ go 1.17
 
 require (
 	github.com/DoNewsCode/core v0.12.0
-	github.com/go-kit/log v0.2.0
+	github.com/go-kit/log v0.2.1
 	github.com/knadh/koanf v1.4.0
 	github.com/oklog/run v1.1.0
 	github.com/opentracing/opentracing-go v1.2.0
