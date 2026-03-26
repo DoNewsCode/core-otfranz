@@ -6,7 +6,7 @@ require (
 	github.com/DoNewsCode/core v0.12.0
 	github.com/go-kit/log v0.2.0
 	github.com/knadh/koanf v1.4.0
-	github.com/oklog/run v1.1.0
+	github.com/oklog/run v1.2.0
 	github.com/opentracing/opentracing-go v1.2.0
 	github.com/stretchr/testify v1.7.0
 	github.com/twmb/franz-go v1.3.1
