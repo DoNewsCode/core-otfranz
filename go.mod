@@ -1,6 +1,6 @@
 module github.com/DoNewsCode/core-otfranz
 
-go 1.17
+go 1.25.0
 
 require (
 	github.com/DoNewsCode/core v0.12.0
@@ -9,8 +9,8 @@ require (
 	github.com/oklog/run v1.1.0
 	github.com/opentracing/opentracing-go v1.2.0
 	github.com/stretchr/testify v1.7.0
-	github.com/twmb/franz-go v1.3.1
-	github.com/twmb/franz-go/pkg/kmsg v0.0.0-20220114004744-91b30863ac2f
+	github.com/twmb/franz-go v1.21.5
+	github.com/twmb/franz-go/pkg/kmsg v1.13.1
 )
 
 require (
@@ -21,11 +21,11 @@ require (
 	github.com/golang/protobuf v1.5.2 // indirect
 	github.com/gorilla/mux v1.8.0 // indirect
 	github.com/inconshreveable/mousetrap v1.0.0 // indirect
-	github.com/klauspost/compress v1.13.6 // indirect
+	github.com/klauspost/compress v1.18.6 // indirect
 	github.com/mitchellh/copystructure v1.2.0 // indirect
 	github.com/mitchellh/mapstructure v1.4.3 // indirect
 	github.com/mitchellh/reflectwalk v1.0.2 // indirect
-	github.com/pierrec/lz4/v4 v4.1.11 // indirect
+	github.com/pierrec/lz4/v4 v4.1.26 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/robfig/cron/v3 v3.0.1 // indirect
